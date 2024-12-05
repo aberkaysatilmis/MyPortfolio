@@ -40,19 +40,19 @@
 										<td>@item.Date</td>
 										@if (item.Status == true)
 										{
-											<td><a href="/ToDoList/ChangeStatusToFalse/@item.ToDoListId" class="btn btn-secondary">Yapılmadı Olarak İşaretle</a></td>
+											<td><a href="/ToDoList/ChangeStatusToFalse/@item.ToDoListId" class="btn btn-outline-secondary">Yapılmadı Olarak İşaretle</a></td>
 										}
 										else
 										{
-											<td><a href="/ToDoList/ChangeStatusToTrue/@item.ToDoListId" class="btn btn-info">Yapıldı Olarak İşaretle</a></td>
+											<td><a href="/ToDoList/ChangeStatusToTrue/@item.ToDoListId" class="btn btn-outline-info">Yapıldı Olarak İşaretle</a></td>
 										}
-										<td><a href="/ToDoList/DeleteToDoList/@item.ToDoListId" class="btn btn-danger">Sil</a></td>
-										<td><a href="/ToDoList/UpdateToDoList/@item.ToDoListId" class="btn btn-success">Güncelle</a></td>
+										<td><a href="/ToDoList/DeleteToDoList/@item.ToDoListId" class="btn btn-outline-danger">Sil</a></td>
+										<td><a href="/ToDoList/UpdateToDoList/@item.ToDoListId" class="btn btn-outline-success">Güncelle</a></td>
 									</tr>
 								}
 							</tbody>
 						</table>
-						<a href="/ToDoList/CreateToDoList/" class="btn btn-primary">Yapılacak Ekle</a>
+						<a href="/ToDoList/CreateToDoList/" class="btn btn-outline-warning">Yapılacak Ekle</a>
 					</div>
 				</div>
 			</div>

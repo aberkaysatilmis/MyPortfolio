@@ -37,16 +37,16 @@
 										<td>@item.NameSurname <br /> @item.Email</td>
 										<td>@item.Subject</td>
 										<td>@item.SendDate</td>
-										<td><a href="/Message/MessageDetail/@item.MessageId" class="btn btn-warning">Mesajı Aç</a></td>
+										<td><a href="/Message/MessageDetail/@item.MessageId" class="btn btn-outline-warning">Mesajı Aç</a></td>
 										@if(item.IsRead == true)
 										{
-											<td><a href="/Message/ChangeIsReadToFalse/@item.MessageId" class="btn btn-secondary">Okunmadı Olarak İşaretle</a></td>
+											<td><a href="/Message/ChangeIsReadToFalse/@item.MessageId" class="btn btn-outline-secondary">Okunmadı Olarak İşaretle</a></td>
 										}
 										else
 										{
-											<td><a href="/Message/ChangeIsReadToTrue/@item.MessageId" class="btn btn-info">Okundu Olarak İşaretle</a></td>
+											<td><a href="/Message/ChangeIsReadToTrue/@item.MessageId" class="btn btn-outline-info">Okundu Olarak İşaretle</a></td>
 										}
-										<td><a href="/Message/DeleteMessage/@item.MessageId" class="btn btn-danger">Sil</a></td>
+										<td><a href="/Message/DeleteMessage/@item.MessageId" class="btn btn-outline-danger">Sil</a></td>
 									</tr>
 								}
 							</tbody>

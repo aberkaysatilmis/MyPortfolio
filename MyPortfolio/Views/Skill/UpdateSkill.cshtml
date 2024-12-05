@@ -1,29 +1,29 @@
-﻿@model Feature
+﻿@model Skill
 
 @{
-    ViewData["Title"] = "CreateFeature";
+    ViewData["Title"] = "UpdateSkill";
     Layout = "~/Views/Layout/Index.cshtml";
 }
 
 <div class="content">
 	<div class="container-fluid">
-		<h4 class="page-title">Öne Çıkan Alan</h4>
+		<h4 class="page-title">Yetenekler</h4>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="card">
 					<div class="card-header">
-						<div class="card-title">Öne Çıkan Ekleme Sayfası</div>
+						<div class="card-title">Yetenek Güncelleme Sayfası</div>
 					</div>
 					<div class="card-body">
-
 						<form method="post">
-
+							<input type="hidden" asp-for="SkillId" />
 							<label>Başlık Bilgisi</label>
 							<input type="text" asp-for="Title" class="form-control" required />
 							<br />
-							<textarea rows="4" asp-for="Description" class="form-control" required></textarea>
+							<label>Oran</label>
+							<input type="text" asp-for="Value" class="form-control" required />
 							<br />
-							<button class="btn btn-outline-warning">Öne Çıkan Ekle</button>
+							<button class="btn btn-outline-info">Yetenek Güncelle</button>
 						</form>
 					</div>
 				</div>
