@@ -14,7 +14,7 @@ Siteler üzerinde NavBar ve Sidebar özellikleri ile sayfalar arası yönlendirm
 Sosyal medya yönlendirmeleri sağlandı.
 
 ### Kullanılan Teknolojiler
-:copyright: ASP.Net MVC Framework tabanlı
+:copyright: ASP.Net MVC Framework
 
 Entity Framework ORM aracı olarak kullanıldı
 
