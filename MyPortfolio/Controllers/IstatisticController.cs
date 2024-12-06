@@ -18,6 +18,7 @@ namespace MyPortfolio.Controllers
             ViewBag.v6 = context.Portfolios.Count();
             ViewBag.v7 = context.Skills.Average(x => (float)x.Value);
             ViewBag.v8 = context.SocialMedias.Count();
+
             return View();
         }
     }

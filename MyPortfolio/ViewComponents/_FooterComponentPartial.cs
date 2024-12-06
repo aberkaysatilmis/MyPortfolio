@@ -9,8 +9,8 @@ namespace MyPortfolio.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-
-            return View();
+            var value = context.SocialMedias.ToList();
+            return View(value);
         }
     }
 }
