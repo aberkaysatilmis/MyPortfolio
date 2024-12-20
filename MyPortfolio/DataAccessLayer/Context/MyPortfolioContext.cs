@@ -7,7 +7,8 @@ namespace MyPortfolio.DataAccessLayer.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-3F18H4A\\MSSQLSERVERR;initial Catalog=MyPortfolioDb;integrated Security=true;");
+            //Başka bir konumda çalıştırırken bilgisayar adına bağımlı kalmadan bu şekilde kullanabilirsin.
+            optionsBuilder.UseSqlServer("Server=.\\;initial Catalog=MyPortfolioDb; integrated security=True;TrustServerCertificate=True;");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Contact> Contacts { get; set; }
